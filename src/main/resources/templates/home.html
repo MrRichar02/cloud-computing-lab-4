@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lista de integrantes</title>
+<style>
+table,img {
+  margin: 10px auto;
+}
+
+img {
+  width: 200px;
+  display: block;
+}
+
+h1,h2 {
+  text-align:center;
+}
+
+</style>
+  </head>
+  <body>
+    <img src="https://www.udea.edu.co/wps/wcm/connect/udea/99fc43e7-7a64-45bd-97fc-96639b70813d/logosimbolo-vertical.png?MOD=AJPERES&CVID=ljeLvHr" alt="Logosimbolo Udea">
+    <h1>Laboratorio #4 Cloud Computing</h1>
+    <h2>Contenedores y Despliegue con Docker</h2>
+    <table>
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Age</td>
+          <td>Email</td>
+        </tr>
+
+      </thead>
+
+      <tbody>
+        <tr th:each="user: ${users}">
+          <td th:text="${user.name}"></td>
+          <td th:text="${user.age}"></td>
+          <td th:text="${user.email}"></td>
+        </tr>
+      </tbody>
+
+    </table>
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-world.net%2Fwp-content%2Fuploads%2F2021%2F02%2FDocker-Emblem.png&f=1&nofb=1&ipt=01749842e0681d76828e954451f6532aca6d17a21ba450321deb3b61fe8c698e&ipo=images" alt="Logo docker">
+  </body>
+</html>
