@@ -1,8 +1,8 @@
 # Laboratorio 4 — Contenedores y Despliegue con Docker
 
-Computación en la Nube · UdeA 2026
+Cloud Computing  · UdeA 2026
 
-Integrantes: Ricardo, Argenis y Diego.
+Integrantes: Ricardo Medina Herrera, Argenis Medina Morales y Juan Diego Duque.
 
 ## Descripción
 
